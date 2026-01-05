@@ -1,4 +1,4 @@
-# 4D Entangled Volumetric Scattering via Neural Importance Sampling
+# 4D Entangled Stylized Volumetric Scattering via Neural Importance Sampling
 
 ## TL;DR
 
@@ -6,12 +6,13 @@
   - Outgoing direction (2D)
   - Wavelength (1D)
   - Scattering distance (1D) [Hence the non-physical behavior]
+- Started with a synthetic/proxy scattering function, so that I could later extend this neural sampler to different scattering functions with **similar levels of complexity/entanglement**.
 - Compared **4D grid-based sampling** vs. a **4D neural inverse transform sampler**.
 - For sufficiently complex / fluctuating scattering functions:
   - The neural sampler achieved **~3× lower Sliced Wasserstein Distance** to ground truth.
   - Used **~33× less memory** (1.5 MB vs. 50 MB).
-- Results suggest **neural importance sampling clearly outperforms grids** in high-dimensional, entangled sampling spaces.
-- Project is **paused** due to renderer integration complexity and limited support for joint sampling in modern renderers.
+- Results empirically show that **neural importance sampling clearly outperforms grids** in high-dimensional, entangled sampling spaces.
+- Project is paused due to renderer integration complexity and limited support for joint sampling in modern renderers.
 
 
 
@@ -19,7 +20,7 @@
 
 ## Overview
 
-This project explores a **stylized, non-photorealistic volumetric scattering model** that jointly samples multiple scattering variables *at once*, rather than independently. The goal was to understand when **traditional grid-based sampling breaks down** in higher-dimensional, entangled scattering spaces—and when **neural inverse transform sampling** becomes a better alternative.
+This project explores a **stylized, non-photorealistic volumetric scattering model** that jointly samples multiple scattering variables *at once*, rather than independently. The goal was to understand when **traditional grid-based sampling breaks down** in higher-dimensional, entangled scattering spaces, and when **neural inverse transform sampling** becomes a better alternative.
 
 ## Motivation
 
@@ -39,7 +40,7 @@ At the same time, I was investigating **neural importance sampling**, with the s
 
 ## Approach
 
-To study this, I constructed a **synthetic proxy scattering function** with controlled complexity and compared two sampling approaches:
+To study this, I constructed a **synthetic proxy scattering function** with controlled complexity, **so that I could later extend this neural sampler to different scattering functions with similar levels of complexity/entanglement**:
 
 ### 1. Neural Inverse Transform Sampler
 
