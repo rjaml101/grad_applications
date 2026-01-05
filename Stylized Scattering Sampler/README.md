@@ -14,7 +14,7 @@ Given the **incoming direction** of a light ray, I wanted to simulate a stylized
 - **Wavelength** (1 variable)
 - **Scattering distance** (1 variable) [Hence the non-physical behavior]
 
-This forms a **4D entangled volumetric scattering function**.
+This forms a **4D (stylized) volumetric scattering function**.
 
 > Note: Jointly sampling scattering distance is not physically meaningful in a traditional rendering context, since we cannot physically predict the next interaction position. This project intentionally operates in a **stylized / non-photorealistic** domain.
 
