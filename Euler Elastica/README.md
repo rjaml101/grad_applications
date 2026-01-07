@@ -9,8 +9,8 @@ The goal was to come up with the proper numerical/iterative method to generate d
 
 ## Algorithms Used / Considered
 
-- Helped with derivations and proof-of-concept implementations in Python and MATLAB, for the Augmented Lagrangian (AL) method.  
-- Came up with a simple scalene/isosceles algorithm for length minimization under 2D scalar area constraint. Though it is simpler than the default Augmented Lagrangian method, it unfortunately didn’t generalize beyond the planar case, so we went back to the Augmented Lagrangian version.  
+- Helped with discretizations, derivations and proof-of-concept implementations in Python and MATLAB, for the Augmented Lagrangian (AL) method.  
+- Came up with a simple scalene/isosceles algorithm for length minimization under 2D scalar area constraint. Though it is simpler than the default Augmented Lagrangian method, it unfortunately didn’t generalize beyond the planar case, so we went back to the Augmented Lagrangian version **[Attached "Note on 2D Algorithm.pdf" to this folder]**.  
 
 ## Result
 
