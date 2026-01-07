@@ -7,6 +7,7 @@
 ## Euler Elastica 
 
 - The goal was to come up with the proper numerical/iterative method to generate discrete closed 3D Euler Elastic curves, by starting with randomly initialized points in 3D space, and using a simple **length minimization method while constraining the Area vector and Volume vector, instead of minimizing bending energy while constraining length and torsion**
+- **My Contributions: I helped with discretizations, derivations and implementations for the Augmented Lagrangian (AL) method in 3D. I also came up with a simple scalene/isosceles algorithm for length minimization under 2D scalar area constraint (though this part didn’t generalize to the 3D case).**
 - **Result: The code now generates closed 3D Euler Elastic curves based on length minimizer with area vector and volume vector constraints (using an Augmented Lagrangian), as opposed to the more complex method of minimizing total bending energy with length and total torsion constraints.**
 - Extensions: We can also try to extend this to open curves. This also has implications for splines in CAD
 
