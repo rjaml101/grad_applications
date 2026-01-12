@@ -16,6 +16,32 @@ The goal was to come up with the proper numerical/iterative method to generate d
 
 The code now generates closed 3D Euler Elastic curves based on length minimizer with area vector and volume vector constraints (using an Augmented Lagrangian), as opposed to the more complex method of minimizing total bending energy with length and total torsion constraints.  
 
+**EXAMPLES OF GENERATED EULER ELASTIC CURVES WITH VARIOUS AREA/VOLUME VECTOR CONSTRAINTS**
+
+CIRCLE: 
+
+A = [5,5,5]; V = [0,0,0]
+
+<img width="349" height="287" alt="A5_V0_circle" src="https://github.com/user-attachments/assets/67585f56-5853-4827-8293-a53dba6ef3dc" />
+
+
+BUCKLED LOOP:
+
+A = [5,5,5]; V = [5,5,5]
+
+<img width="402" height="276" alt="A5_V5_buckled_loop" src="https://github.com/user-attachments/assets/44c4350f-9566-422a-ae36-92e8e4e0113b" />
+
+
+
+FIGURE EIGHT:
+
+A = [0,0,0]; V = [5,5,5]
+
+<img width="431" height="186" alt="A0_V5_figure_eight" src="https://github.com/user-attachments/assets/7c681531-98fa-4172-9409-7ff40c0a47a7" />
+
+
+
+
 ## Extensions
 
 - We can also try to extend this to open curves.  
