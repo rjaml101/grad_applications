@@ -1,6 +1,7 @@
 # Euler Elastica
 
 **NOTE: In case the images aren't visible on the Github link, I also put them in a PDF ("Euler Elastica Examples.pdf")**
+
 **ANOTHER NOTE: The current version of our Elastica writeup is labeled ("Euler Elastica.pdf"), in this folder**
 
 A closed 3D Euler Elastic curve can be interpreted as **minimizing total bending energy, constrained by constant total torsion and constant length**. However, there exists a simpler characterization: 3D Euler Elastica can also be defined by **minimizing length, constrained by a constant “projected” area vector and “revolved” volume vector**. This is an easier way to generate Euler Elastic curves, and it’s also easier to discretize.  
