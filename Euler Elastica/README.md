@@ -18,6 +18,8 @@ The code now generates closed 3D Euler Elastic curves based on length minimizer 
 
 **EXAMPLES OF GENERATED EULER ELASTIC CURVES WITH VARIOUS AREA/VOLUME VECTOR CONSTRAINTS**
 
+**Note: In case the images aren't visible on the Github link, I also put them in a PDF ("Euler Elastica Examples.pdf")**
+
 CIRCLE: 
 
 A = [5,5,5]; V = [0,0,0]
