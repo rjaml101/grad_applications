@@ -1,5 +1,8 @@
 # Euler Elastica
 
+**NOTE: In case the images aren't visible on the Github link, I also put them in a PDF ("Euler Elastica Examples.pdf")**
+**ANOTHER NOTE: The current version of our Elastica writeup is labeled ("Euler Elastica.pdf"), in this folder**
+
 A closed 3D Euler Elastic curve can be interpreted as **minimizing total bending energy, constrained by constant total torsion and constant length**. However, there exists a simpler characterization: 3D Euler Elastica can also be defined by **minimizing length, constrained by a constant “projected” area vector and “revolved” volume vector**. This is an easier way to generate Euler Elastic curves, and it’s also easier to discretize.  
 
 The goal was to come up with the proper numerical/iterative method to generate discrete closed 3D Euler Elastic curves, by starting with randomly initialized points in 3D space, and using a simple length minimization method while constraining the Area vector and Volume vector.  
@@ -17,8 +20,6 @@ The goal was to come up with the proper numerical/iterative method to generate d
 The code now generates closed 3D Euler Elastic curves based on length minimizer with area vector and volume vector constraints (using an Augmented Lagrangian), as opposed to the more complex method of minimizing total bending energy with length and total torsion constraints.  
 
 **EXAMPLES OF GENERATED EULER ELASTIC CURVES WITH VARIOUS AREA/VOLUME VECTOR CONSTRAINTS**
-
-**Note: In case the images aren't visible on the Github link, I also put them in a PDF ("Euler Elastica Examples.pdf")**
 
 CIRCLE: 
 
